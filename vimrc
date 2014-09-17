@@ -14,7 +14,7 @@ call vundle#end()
 filetype plugin indent on
 
 " General Configuration ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-call matchadd('ColorColumn', '\%81v', 100)
+call matchadd('ColorColumn', '\%81v')
 exec "set listchars=trail:\uD7,nbsp:~,tab:\uBB\uBB"
 set autowrite
 set backspace=2
@@ -49,12 +49,8 @@ set shiftwidth=4
 set smarttab
 set tabstop=4
 
-" Terminal Config ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-set term=screen-256color
-set t_Co=256
-
 " Theme ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-colorscheme molokai
+colorscheme zenburn
 
 " Unmap Arrows +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 nnoremap <Left> :echoe "Use h"<CR>
@@ -70,7 +66,7 @@ set splitright
 hi CursorLineNr ctermbg=236 ctermfg=240
 hi CursorLine   ctermbg=236
 hi Visual       ctermbg=4   ctermfg=15
-hi ColorColumn  ctermbg=red ctermfg=white
+hi ColorColumn  ctermbg=green ctermfg=white
 
 " Plugin Config ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 let g:ctrlp_working_path_mode = 'ra'

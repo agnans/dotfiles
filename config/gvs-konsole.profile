@@ -5,7 +5,7 @@ ColorScheme=Linux
 Font=Source Code Pro for Powerline,11,-1,5,63,0,0,0,0,0
 
 [General]
-Environment=TERM=xterm-256color
+Environment=TERM=konsole-256color
 Name=GVS
 Parent=FALLBACK/
 ShowTerminalSizeHint=false

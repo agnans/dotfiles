@@ -42,6 +42,6 @@ export PATH=$PATH:~/.gem/ruby/1.9.1/bin
 export NODE_PATH=$NODE_PATH:~/.npm/lib/node_modules
 
 # TERM +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-export TERM=xterm-256color
+#export TERM=xterm-256color
 stty -ixon -ixoff
 stty stop undef
