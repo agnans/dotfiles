@@ -10,6 +10,8 @@ Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'hdima/python-syntax'
+Plugin 'msanders/snipmate.vim'
+Plugin 'scrooloose/nerdcommenter'
 call vundle#end()
 filetype plugin indent on
 
