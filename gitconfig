@@ -1,0 +1,16 @@
+[user]
+    name = Gabriel Veloso
+    email = agnans92@gmail.com
+
+[github]
+    user = agnans
+
+[color]
+    ui = auto
+
+[core]
+    excludesfile = ~/.global_ignore
+    editor = vim    
+
+[push]
+	default = simple
