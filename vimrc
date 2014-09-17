@@ -83,8 +83,8 @@ nnoremap : ;
 vnoremap ; :
 vnoremap : ;
 nnoremap <C-s> :w<CR>
-nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
+nnoremap <Leader>t :set invpaste paste?<CR>
 
 " Leader +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 nnoremap <Leader>b :CtrlPBuffer<CR>
