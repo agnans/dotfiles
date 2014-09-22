@@ -29,12 +29,12 @@ set incsearch
 set laststatus=2
 set list
 set nobackup
-set noshowmode
 set nowrap
 set ruler
 set scrolloff=1
 set showcmd
 set sidescrolloff=5
+set noswapfile
 set ttimeout
 set ttimeoutlen=100
 set wildmenu
