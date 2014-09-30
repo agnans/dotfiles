@@ -1,7 +1,7 @@
 # ~/.tmuxinator/protix.yml
 
 name: protix
-root: ~/Workspace/protix
+root: ~/workspace/protix
 
 # Optional tmux socket
 # socket_name: foo
