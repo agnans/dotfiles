@@ -2,14 +2,16 @@
 DOTFILES=`pwd`
 
 echo Copying dotfiles...
-for f in zshrc             \
-         vimrc             \
-         tmux.conf         \
-         npmrc             \
-         vim               \
+for f in \
          gitconfig         \
          global_ignore     \
-         tmuxinator
+         npmrc             \
+         tmux.conf         \
+         tmuxinator        \
+         vim               \
+         vimperatorrc      \
+         vimrc             \
+         zshrc
     do
         rm -rf ~/.$f
         ln -s $DOTFILES/$f ~/.$f
