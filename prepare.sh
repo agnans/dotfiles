@@ -3,35 +3,36 @@ sudo add-apt-repository -y ppa:chris-lea/node.js > /dev/null 2>&1
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo Updating apt...
 sudo apt-get update -qq
-echo Installing curl...
-sudo apt-get install -qqy curl
-echo Installing dkms...
-sudo apt-get install -qqy dkms
-echo Installing git...
-sudo apt-get install -qqy git
-echo Installing nodejs...
-sudo apt-get install -qqy nodejs
-echo Installing pip...
-sudo apt-get install -qqy python-dev python-pip
-echo Installing ruby...
-sudo apt-get install -qqy ruby1.9.1
-echo Installing tmux...
-sudo apt-get install -qqy tmux
-gem install tmuxinator --user-install -q
-echo Installing tree...
-sudo apt-get install -qqy tree
-echo Installing vim...
-sudo apt-get install -qqy vim
-echo Installing xclip...
-sudo apt-get install -qqy xclip
-echo Installing zsh...
-sudo apt-get install -qqy zsh
-echo Installing dev libraries...
-sudo apt-get install -qqy libffi-dev
-sudo apt-get install -qqy libssl-dev
-sudo apt-get install -qqy libxml2-dev
-sudo apt-get install -qqy libxslt1-dev
+
+echo Installing software...
+sudo apt-get install -qqy \
+    checkinstall \
+    curl \
+    dkms \
+    git \
+    libatk1.0-dev \
+    libbonoboui2-dev \
+    libcairo2-dev \
+    libffi-dev \
+    libgnome2-dev \
+    libgnomeui-dev \
+    libgtk2.0-dev \
+    libncurses5-dev \
+    libssl-dev \
+    libx11-dev \
+    libxml2-dev \
+    libxpm-dev \
+    libxslt1-dev \
+    libxt-dev \
+    nodejs \
+    python-dev python-pip \
+    ruby1.9.1 ruby-dev \
+    tmux \
+    tree \
+    xclip \
+    zsh
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+gem install tmuxinator --user-install -q
 pip install virtualenv --user
 pip install virtualenvwrapper --user
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
