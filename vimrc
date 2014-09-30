@@ -10,8 +10,11 @@ Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'hdima/python-syntax'
-Plugin 'msanders/snipmate.vim'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'mattn/emmet-vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 call vundle#end()
 filetype plugin indent on
 
@@ -44,7 +47,7 @@ syntax on
 set number
 set numberwidth=5
 
-" Tabs +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+" Indentation ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 set autoindent
 set expandtab
 set shiftwidth=4
@@ -71,20 +74,32 @@ hi Visual       ctermbg=4   ctermfg=15
 hi ColorColumn  ctermbg=green ctermfg=white
 
 " Plugin Config ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+" >> CtrlP
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_max_height = 15
+" >> Airline
 let g:airline_powerline_fonts = 1
 let g:airline_theme='dark'
-
+" >> You Complete Me
+let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_use_ultisnips_completer = 1
+let g:ycm_seed_identifiers_with_syntax = 1
+let g:ycm_complete_in_comments = 1
+let g:ycm_complete_in_strings = 1
+let g:UltiSnipsExpandTrigger = "<c-j>"
+let g:UltiSnipsJumpForwardTrigger = "<c-j>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-i>"
 " Keys +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 let mapleader = ','
+" >> command mode on semicolon in normal and visual mode
 nnoremap ; :
 nnoremap : ;
 vnoremap ; :
 vnoremap : ;
+" >> save on Ctrl-s
 nnoremap <C-s> :w<CR>
-nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
-nnoremap <Leader>t :set invpaste paste?<CR>
+" >> remove search hightlight on Ctrl-l
+nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
 
 " Leader +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 nnoremap <Leader>b :CtrlPBuffer<CR>
@@ -92,9 +107,9 @@ nnoremap <Leader>p :CtrlP<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
 
 " Ignore files +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-" BASIC
+" >> System
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.deb,*.gz
-" PYTHON
+" >> Python
 set wildignore+=*.pyc,__init__.py
-" IMAGES
+" >> Images
 set wildignore+=*.svg,*.jpg,*.png,*.ico
