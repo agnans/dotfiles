@@ -1,4 +1,15 @@
+"// vim: ft=vim
+
 nnoremap ; :
 nnoremap : ;
 
 set focuscontent
+set followhints=1
+
+" Highlighting
+hi Hint font: bold 12px monospace; background: #f00; border: 1px solid #a00; border-radius: 3px; padding: 1px 2px; color: #fff;
+hi HintElem opacity: 1;
+hi HintActive box-shadow: 0px 0px 5px 1px #0c0;
+
+" Hints
+set hinttags=//input[not(@type=\'hidden\')]\ |\ //xhtml:input[not(@type=\'hidden\')]\ |\ //a[@href]\ |\ //xhtml:a[@href]\ |\ //area\ |\ //xhtml:area\ |\ //iframe\ |\ //xhtml:iframe\ |\ //textarea\ |\ //xhtml:textarea\ |\ //button\ |\ //xhtml:button\ |\ //select\ |\ //xhtml:select\ |\ //*[@onclick\ or\ @onmouseover\ or\ @onmousedown\ or\ @onmouseup\ or\ @oncommand\ or\ @role=\'link\'or\ @role=\'button\'\ or\ @role=\'checkbox\'\ or\ @role=\'combobox\'\ or\ @role=\'listbox\'\ or\ @role=\'listitem\'\ or\ @role=\'menuitem\'\ or\ @role=\'menuitemcheckbox\'\ or\ @role=\'menuitemradio\'\ or\ @role=\'option\'\ or\ @role=\'radio\'\ or\ @role=\'scrollbar\'\ or\ @role=\'slider\'\ or\ @role=\'spinbutton\'\ or\ @role=\'tab\'\ or\ @role=\'textbox\'\ or\ @role=\'treeitem\'\ or\ @tabindex]
