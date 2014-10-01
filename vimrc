@@ -48,6 +48,7 @@ set number
 set numberwidth=5
 
 " Indentation ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 set autoindent
 set expandtab
 set shiftwidth=4
@@ -89,6 +90,7 @@ let g:ycm_complete_in_strings = 1
 let g:UltiSnipsExpandTrigger = "<c-j>"
 let g:UltiSnipsJumpForwardTrigger = "<c-j>"
 let g:UltiSnipsJumpBackwardTrigger = "<c-i>"
+
 " Keys +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 let mapleader = ','
 " >> command mode on semicolon in normal and visual mode
