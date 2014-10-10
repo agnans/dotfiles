@@ -104,6 +104,10 @@ inoremap <C-S> <Esc>:w<CR>i
 " Ctrl-L: clear last search highlighting
 nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 
+" Buffer switching
+nnoremap <F7> :bprev<CR>
+nnoremap <F8> :bnext<CR>
+
 nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap <Leader>p :CtrlP<CR>
 nnoremap <Leader>t :NERDTreeToggle<CR>
