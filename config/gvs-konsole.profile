@@ -2,7 +2,7 @@
 AntiAliasFonts=true
 BoldIntense=true
 ColorScheme=Linux
-Font=Ubuntu Mono derivative Powerline,11,-1,5,50,0,0,0,0,0
+Font=DejaVu Sans Mono for Powerline,9,-1,5,50,0,0,0,0,0
 
 [Cursor Options]
 CursorShape=0
