@@ -116,6 +116,8 @@ nnoremap <Leader>p :CtrlP<CR>
 nnoremap <Leader>t :NERDTreeToggle<CR>
 nnoremap <Leader>n :NERDTreeFocus<CR>
 nnoremap <Leader>v :set paste<CR>"+p:set nopaste<CR>
+nnoremap <Leader>w <c-w>w
+nnoremap <Leader>q :bd<CR>
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.deb,*.gz
 set wildignore+=*.pyc,__init__.py
