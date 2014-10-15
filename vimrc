@@ -23,17 +23,18 @@ filetype plugin indent on
 syntax on
 
 " Plugin Config
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts=1
 let g:airline_theme='dark'
-let g:ctrlp_max_height = 15
-let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_max_height=15
+let g:ctrlp_working_path_mode='ra'
+let g:NERDTreeWinSize=30
 
 " Indentation
 set autoindent
 set expandtab
-set shiftwidth=4
+set shiftwidth=2
 set smarttab
-set tabstop=4
+set tabstop=2
 
 " Options
 set autowrite
@@ -89,10 +90,12 @@ imap <Up>     <Nop>
 imap <Down>   <Nop>
 
 " Custom highlighting
-hi ColorColumn  ctermbg=236       ctermfg=white
+hi ColorColumn  ctermbg=236         ctermfg=white
 hi CursorLine   ctermbg=236
-hi CursorLineNr ctermbg=236         ctermfg=240
-hi Visual       ctermbg=4           ctermfg=15
+au InsertEnter * hi CursorLine ctermbg=239
+au InsertLeave * hi CursorLine ctermbg=236
+hi CursorLineNr ctermbg=yellow      ctermfg=0
+hi Visual       ctermbg=5           ctermfg=15
 
 " Our leader
 let mapleader = ','
