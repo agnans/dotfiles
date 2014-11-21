@@ -122,3 +122,10 @@ nnoremap <Leader>q :bd<CR>
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.deb,*.gz
 set wildignore+=*.pyc,__init__.py
 set wildignore+=*.svg,*.jpg,*.png,*.ico
+if has('gui_running')
+  set guioptions-=m
+  set guioptions-=T
+  set guioptions-=r
+  set guioptions-=L
+  set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+endif
