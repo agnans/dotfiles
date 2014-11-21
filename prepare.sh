@@ -25,7 +25,7 @@ sudo apt-get install -qqy \
     libxslt1-dev \
     libxt-dev \
     nodejs \
-    python-dev python-pip \
+    python-dev python-pip python3-dev python3-setuptools \
     ruby1.9.1 ruby-dev \
     tmux \
     tree \
