@@ -2,7 +2,7 @@
 export DOT=$HOME/dotfiles
 if [ -d $DOT ]; then
     export PATH=$PATH:$DOT/bin
-    source $DOT/aliases
+    source $DOT/aliases.sh
 else
     echo "Configure DOT in .zshrc to point to your dotfiles repository"
     read
@@ -11,11 +11,10 @@ fi
 
 # ZSH ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="robbyrussell"
+ZSH_THEME="edvardm"
 DISABLE_CORRECTION="true"
-plugins=(git tmuxinator pip bower)
+plugins=(git pip bower)
 source $ZSH/oh-my-zsh.sh
-export EDITOR='vim'
 # VirtualEnv +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 export WORKON_HOME=~/Envs
 

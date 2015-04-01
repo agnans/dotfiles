@@ -26,13 +26,10 @@ sudo apt-get install -qqy \
     libxt-dev \
     nodejs \
     python-dev python-pip python3-dev python3-setuptools \
-    ruby1.9.1 ruby-dev \
-    tmux \
     tree \
     xclip \
     zsh
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-gem install tmuxinator --user-install -q
 pip install virtualenv --user
 pip install virtualenvwrapper --user
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
